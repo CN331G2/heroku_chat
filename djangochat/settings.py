@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CSRF_TRUSTED_ORIGINS = ['https://privateappwithheroku.herokuapp.com/']
+# CSRF_TRUSTED_ORIGINS = ['https://privateappwithheroku.herokuapp.com/']
 
 import django_heroku
 
