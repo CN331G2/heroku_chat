@@ -51,6 +51,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+
 ROOT_URLCONF = 'djangochat.urls'
 
 TEMPLATES = [
@@ -121,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# CSRF_TRUSTED_ORIGINS = ['https://privateappwithheroku.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['http://privateappwithheroku.herokuapp.com/']
 
 import django_heroku
 
